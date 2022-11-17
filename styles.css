@@ -29,6 +29,11 @@ body {
     border-radius: 10px;
     background: #66cc00;
     padding: 10px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background: #509b05;
 }
 
 .control-button-guts {
@@ -50,17 +55,17 @@ body {
     height: 800px;
 }
 
-.image-area-left {
+#image-area-left {
     border: 2px solid red;
-    width: 20%;
-    height: 60%;
+    width: 10%;
+    /* height: 60%; */
     overflow: hidden;
 }
 
-.image-area-right {
+#image-area-right {
     border: 2px solid blue;
-    width: 20%;
-    height: 60%;
+    width: 10%;
+    /* height: 60%; */
     overflow: hidden;
 }
 
