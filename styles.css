@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.controls {
+    border: 1px solid black;
+}
+
+.control-buttons-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.control-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    background: #66cc00;
+    padding: 10px;
+}
+
+.control-button-guts {
+    /* border: 1px solid orange; */
+}
+
+.control-button-guts div {
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+}
+
+.image-area {
+    border: 7px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+}
+
+.image-area-left {
+    border: 2px solid red;
+    width: 20%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.image-area-right {
+    border: 2px solid blue;
+    width: 20%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.image {
+    /* width: 100%; */
+}
+
+.image img {
+    width: 100%;
+}
