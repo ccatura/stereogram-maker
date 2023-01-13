@@ -4,7 +4,7 @@
 }
 
 :root {
-    --debug-borders: 2px;
+    --debug-borders: 0px;
     --controls-height: 10vh;
     --body-height: 90vh;
 }
