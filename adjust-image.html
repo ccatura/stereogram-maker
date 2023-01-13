@@ -12,34 +12,17 @@
 <body>
 
     <div class="controls">
-        <div class="control-buttons-container">
-            <div class="control-button" id="button-bigger">
-                <div class="control-button-guts">
-                    <div>Bigger</div>
-                </div>
+        <div class="slider-container">
+            <div class="single-control-section">Overall Stereogram Size: <strong><span id="size"></span></strong>
+                <input type="range" min="10" max="100" value="50" class="slider" id="images-total-size">
             </div>
-            <div class="control-button" id="button-smaller">
-                <div class="control-button-guts">
-                    <div>Smaller</div>
-                </div>
-            </div>
-            <a class="control-button" id="download">
-                <div class="control-button-guts">
-                    <div>Download</div>
-                </div>
-            </a>
         </div>
     </div>
-    <div class="image-area">
-        <div id="image-area-left">
-            <div class="image">
-                <img src="./stereo/image001/image001b.jpg" id="image-left">
-            </div>
-        </div>
-        <div id="image-area-right">
-            <div class="image">
-                <img src="./stereo/image001/image001a.jpg" id="image-left">
-            </div>
+
+    <div class="image-outer-container">
+        <div class="image-direct-container">
+            <div id="image-left"  style="background-image: url('stereo/image001/image001b.jpg');"></div>
+            <div id="image-right" style="background-image: url('stereo/image001/image001a.jpg');"></div>
         </div>
     </div>
 

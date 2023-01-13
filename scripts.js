@@ -1,32 +1,27 @@
-var imageAreaLeft = document.querySelector('#image-area-left');
-var imageAreaRight = document.querySelector('#image-area-right');
-var imageArea = document.querySelector('.image-area');
+var imageLeft = document.querySelector('#image-left');
+var imageRight = document.querySelector('#image-right');
+var imageDirectContainer = document.querySelector('.image-direct-container');
 
 var buttonBigger = document.querySelector('#button-bigger');
 var buttonSmaller = document.querySelector('#button-smaller');
-var theScale = 10;
-var scaleIncrements = 1;
 
-buttonBigger.addEventListener("click", function() {
-    theScale += scaleIncrements;
-    imageAreaLeft.style.width = theScale + "%";
-    imageAreaRight.style.width = theScale + "%";
-    console.log(theScale);
-});
+var sliderImagesTotal = document.getElementById("images-total-size");
+var output = document.getElementById("size");
+output.innerHTML = sliderImagesTotal.value;
 
-buttonSmaller.addEventListener("click", function() {
-    theScale -= scaleIncrements;
-    imageAreaLeft.style.width = theScale + "%";
-    imageAreaRight.style.width = theScale + "%";
-    console.log(theScale);
-});
+sliderImagesTotal.oninput = function() {
+  output.innerHTML = this.value;
+  updateDirectContainerSize(this.value);
+}
 
 
 
 
-
-
-
+function updateDirectContainerSize(sliderValue) {
+  imageDirectContainer.style.width = (sliderValue * 8) + "px";
+  imageDirectContainer.style.height = (sliderValue * 8) + "px";
+  console.log(sliderValue);
+}
 
 function download(canvas, filename) {
     const data = canvas.toDataURL("image/png;base64");
@@ -40,3 +35,8 @@ function download(canvas, filename) {
     download(canvas, "asd");
   });
   
+
+
+
+
+
