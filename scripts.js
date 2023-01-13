@@ -21,18 +21,16 @@ function updateDirectContainerSize(sliderValue) {
 }
 
 function download(canvas, filename) {
-  const data = canvas.toDataURL("image/png;base64");
-  const downloadLink = document.querySelector("#download");
+  var data = canvas.toDataURL("image/png;base64");
+  var downloadLink = document.querySelector("#download");
   downloadLink.download = filename;
   downloadLink.href = data;
 }
 
-function getSnapShot() {
-  html2canvas(document.querySelector(".image-direct-container")).then((canvas) => {
-    // document.body.appendChild(canvas);
-    download(canvas, "Stereogram");
-  });
-}
+html2canvas(document.querySelector(".image-direct-container")).then((canvas) => {
+  // document.body.appendChild(canvas);
+  download(canvas, "Stereogram");
+});
 
 
 
