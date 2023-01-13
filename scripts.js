@@ -30,7 +30,7 @@ function download(canvas, filename) {
     downloadLink.href = data;
   }
   
-  html2canvas(document.querySelector(".image-area")).then((canvas) => {
+  html2canvas(document.querySelector(".image-direct-container")).then((canvas) => {
     // document.body.appendChild(canvas);
     download(canvas, "asd");
   });

@@ -22,37 +22,8 @@ body {
     align-items: center;
 }
 
-.control-buttons-container {
-    border: var(--debug-borders) solid red;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.control-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    border-radius: 10px;
-    background: #66cc00;
-    padding: 10px;
+#download {
     cursor: pointer;
-}
-
-.control-button:hover {
-    background: #509b05;
-}
-
-.control-button-guts {
-    border: var(--debug-borders) solid orange;
-}
-
-.control-button-guts div {
-    border: var(--debug-borders) solid black;
-    text-transform: uppercase;
 }
 
 .image-outer-container {
@@ -65,8 +36,8 @@ body {
 
 .image-direct-container {
     border: var(--debug-borders) solid green;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
