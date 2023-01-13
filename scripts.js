@@ -2,9 +2,6 @@ var imageLeft = document.querySelector('#image-left');
 var imageRight = document.querySelector('#image-right');
 var imageDirectContainer = document.querySelector('.image-direct-container');
 
-var buttonBigger = document.querySelector('#button-bigger');
-var buttonSmaller = document.querySelector('#button-smaller');
-
 var sliderImagesTotal = document.getElementById("images-total-size");
 var output = document.getElementById("size");
 output.innerHTML = sliderImagesTotal.value;
@@ -24,15 +21,15 @@ function updateDirectContainerSize(sliderValue) {
 }
 
 function download(canvas, filename) {
-    const data = canvas.toDataURL("image/png;base64");
-    const downloadLink = document.querySelector("#download");
+    var data = canvas.toDataURL("image/png;base64");
+    var downloadLink = document.querySelector("#download");
     downloadLink.download = filename;
     downloadLink.href = data;
   }
   
   html2canvas(document.querySelector(".image-direct-container")).then((canvas) => {
     // document.body.appendChild(canvas);
-    download(canvas, "asd");
+    download(canvas, "Stereogram");
   });
   
 
